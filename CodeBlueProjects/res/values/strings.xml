@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">Code Blue Projects</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_code_blue_emergency">CodeBlueEmergency</string>
+    <string name="map_api">AIzaSyBingCeVwI1LJMxm_YvqNklNdUVeF02NHQ</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="cb_no_device_string">No devices found</string>
+    <string name="cb_rssi_in_meters">0.000000 </string>
+    <string name="cb_rssi_meters_string">Meters</string>
+
+    <color name="list_devices_text_color">#000000</color>
+
+    <string name="list_devices_default_text">fvck donnah!</string>
+    <string name="title_activity_code_blue_user_register">CodeBlueUserRegister</string>
+
+</resources>

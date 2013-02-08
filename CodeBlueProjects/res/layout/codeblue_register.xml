@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	
+        <EditText
+            android:id="@+id/unameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="25dp"
+            android:ems="12"
+            android:hint="Input username"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwrdTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/unameTxt"
+            android:layout_below="@+id/unameTxt"
+            android:layout_marginTop="18dp"
+            android:ems="12"
+            android:hint="Input password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/firstNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/passwrdTxt"
+            android:layout_below="@+id/passwrdTxt"
+            android:layout_marginTop="112dp"
+            android:ems="12"
+            android:hint="First name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lastNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstNameTxt"
+            android:layout_below="@+id/firstNameTxt"
+            android:layout_marginTop="25dp"
+            android:ems="12"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastNameTxt"
+            android:layout_below="@+id/lastNameTxt"
+            android:layout_marginTop="44dp"
+            android:text="Add Trusted Contact/s :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:text="Contact 1 :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/contactName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:ems="12"
+            android:hint="Contact name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/contactNo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/contactName1"
+            android:layout_below="@+id/contactName1"
+            android:layout_marginTop="10px"
+            android:ems="10"
+            android:hint="Contact No."
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/contactNo1"
+            android:layout_below="@+id/contactNo1"
+            android:layout_marginTop="34dp"
+            android:text="Contact 2 :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/contactName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:ems="12"
+            android:hint="Contact name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/contactNo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/contactName2"
+            android:layout_below="@+id/contactName2"
+            android:layout_marginTop="10px"
+            android:ems="10"
+            android:hint="Contact No."
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/firstNameTxt"
+            android:layout_alignLeft="@+id/firstNameTxt"
+            android:layout_marginBottom="60dp"
+            android:text="Personal Information :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+    </RelativeLayout>
+    
+</ScrollView>
+    
