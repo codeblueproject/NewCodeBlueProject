@@ -11,6 +11,9 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 
 import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.codeblue.bluetooth.CodeBlueBluetooth;
 import com.codeblue.contacts.CodeBlueContacts;
 import com.codeblue.geolocation.CodeBlueCurrentLocation;
@@ -57,6 +60,16 @@ public class CodeBlueDashboard extends SherlockFragment implements
 		return view;
 	}
 
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		super.onCreateOptionsMenu(menu, inflater);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		return super.onOptionsItemSelected(item);
+	}
+
 	private void setFragment(Fragment fragment) {
 		FragmentTransaction ft = getFragmentManager().beginTransaction();
 		ft.replace(R.id.codebluelayout, fragment);
@@ -69,7 +82,7 @@ public class CodeBlueDashboard extends SherlockFragment implements
 	public void onClick(View view) {
 
 		Fragment fragment = null;
-		
+
 		switch (view.getId()) {
 		case R.id.survivalTipsDash:
 			fragment = new CodeBlueSurvivalTips();
@@ -84,7 +97,7 @@ public class CodeBlueDashboard extends SherlockFragment implements
 			fragment = new CodeBlueCurrentLocation();
 			break;
 		}
-		
+
 		setFragment(fragment);
 
 	}

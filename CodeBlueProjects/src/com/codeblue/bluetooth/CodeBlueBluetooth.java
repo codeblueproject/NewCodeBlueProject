@@ -3,6 +3,8 @@ package com.codeblue.bluetooth;
 import java.util.ArrayList;
 
 import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 import com.projects.codeblue.R;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -76,23 +78,6 @@ public class CodeBlueBluetooth extends SherlockFragment {
 		cbFoundDevicesArrayAdapter.setNotifyOnChange(true);
 	}
 
-	/*
-	 * @Override public void onCreateOptionsMenu(Menu menu, MenuInflater
-	 * inflater) { // super.onCreateOptionsMenu(menu); MenuInflater inflater =
-	 * getMenuInflater(); inflater.inflate(R.menu.codeblue_paired_devices,
-	 * menu); return true; }
-	 */
-
-	/*
-	 * @Override public boolean onOptionsItemSelected(MenuItem item) { // TODO
-	 * Auto-generated method stub switch (item.getItemId()) { case
-	 * R.id.new_scan: if (cbBluetoothAdapter.isDiscovering())
-	 * cbBluetoothAdapter.cancelDiscovery(); else
-	 * cbBluetoothAdapter.startDiscovery(); cbFoundDevicesArrayAdapter.clear();
-	 * txtViewNoDevicesFound.setVisibility(View.VISIBLE);
-	 * cbFoundDevicesArrayAdapter.setNotifyOnChange(true); return true; default:
-	 * return super.onOptionsItemSelected(item); } }
-	 */
 
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {

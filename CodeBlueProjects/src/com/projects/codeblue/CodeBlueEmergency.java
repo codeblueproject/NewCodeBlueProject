@@ -1,5 +1,6 @@
 package com.projects.codeblue;
 
+import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.codeblue.ws.CodeBlueWS;
 
@@ -26,6 +27,7 @@ public class CodeBlueEmergency extends SherlockFragmentActivity implements
 	private LocationManager locManager;
 	private PendingIntent sentPI, deliveredPI;
 	private BroadcastReceiver sendBroadcastReceiver, deliverBroadcastReceiver;
+	private ActionBar actionBar;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -40,9 +42,14 @@ public class CodeBlueEmergency extends SherlockFragmentActivity implements
 			ft.add(R.id.codebluelayout, emergencyFragment).commit();
 		}
 
-		//getLocation();
+		actionBar = getSupportActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setDisplayUseLogoEnabled(true);
+
+		// getLocation();
 		registerBroadcastReceivers();
 	}
+
 
 	@Override
 	protected void onStop() {
